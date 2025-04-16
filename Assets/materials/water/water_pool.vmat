@@ -47,7 +47,7 @@ Layer0
 	g_flFrequencyC "10.000"
 	g_flFrequencyD "20.000"
 	g_flNormalScale "0.250"
-	g_flRefractionScale "0.250"
+	g_flRefractionScale "0.500"
 	g_flScale "2.000"
 	g_flSpeedA "[0.000 -0.200]"
 	g_flSpeedB "[0.000 -0.100]"
