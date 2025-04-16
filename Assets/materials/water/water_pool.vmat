@@ -1,0 +1,62 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/simplewater.shader"
+
+	//---- Rendering ----
+	F_DO_NOT_CAST_SHADOWS 1
+
+	//---- Water ----
+	F_CAUSTICS 2 // Flipbook
+	F_DYNAMIC_REFLECTIONS 1 // Aliased
+	F_INDIRECT 2 // High Quality
+	F_PROCEDURAL 1
+
+	//---- Caustics ----
+	Caustics "materials/water/caustics_flipbook.png"
+	g_bFlipbookInterpolate "1"
+	g_bFlipbookLoop "1"
+	g_flCausticsBlur "0.000"
+	g_flCausticsStrength "4.000"
+	g_flFlipbookFramerate "8.000"
+	g_nFlipbookColumns "4"
+	g_nFlipbookRows "4"
+
+	//---- Features ----
+	g_bRefractionDepthTest "1"
+	g_bSheen "0"
+	g_bWaterline "0"
+
+	//---- Fog ----
+	g_flFogDistance "512.000"
+	g_flFogStrength "0.500"
+	g_vColor "[0.807843 0.807843 0.807843 0.000000]"
+	g_vDepthColor "[0.239216 0.415686 0.443137 0.000000]"
+
+	//---- Oily Sheen ----
+	g_flOilRainbowIntensity "0.700"
+	g_flOilScale "2.000"
+	g_flOilSheen "0.500"
+	g_flOilSpeed "0.200"
+
+	//---- Waves ----
+	g_flFeatherDistance "8.000"
+	g_flFrequencyA "1.000"
+	g_flFrequencyB "5.000"
+	g_flFrequencyC "10.000"
+	g_flFrequencyD "20.000"
+	g_flNormalScale "0.250"
+	g_flRefractionScale "0.250"
+	g_flScale "2.000"
+	g_flSpeedA "[0.000 -0.200]"
+	g_flSpeedB "[0.000 -0.100]"
+	g_flSpeedC "[0.000 -0.400]"
+	g_flSpeedD "[0.000 -0.800]"
+	g_flStrengthA "0.100"
+	g_flStrengthB "0.050"
+	g_flStrengthC "0.025"
+	g_flStrengthD "0.012"
+	g_nBlurLevel "0"
+	g_nFrequencyCount "4"
+}
